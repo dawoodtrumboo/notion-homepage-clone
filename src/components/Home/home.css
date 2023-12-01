@@ -1,0 +1,31 @@
+
+.service-grid>div{
+    width: 100%;
+    background-color: #F6F5F4;
+    border-radius: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+  
+}
+
+.home-grid{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    padding: 20px;
+    /* grid-auto-rows: min-content; */
+    align-items: start;
+}
+
+.home-grid>div{
+    background-color: #F6F5F4;
+    border-radius: 1.25rem;
+}
+
+footer a:hover{
+    color: rgb(0, 134, 158);
+    text-decoration: underline;
+}
