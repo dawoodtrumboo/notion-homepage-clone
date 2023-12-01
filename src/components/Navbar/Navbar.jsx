@@ -10,12 +10,12 @@ const Navbar = () => {
     const [featuresTab, setFeaturesTab] = useState('ai');
 
     const handleMoveIn = (value)=>{
-        console.log('in');
+    
         setHoveredTab(value);
     }
 
     const handleMouseOut = ()=>{
-        console.log('out')
+       
         setHoveredTab('');
     }
 
@@ -48,7 +48,7 @@ const Navbar = () => {
                         {hoveredTab==='download' && <NavDropDownBox hoveredTab = {hoveredTab}/>}
                     </li>
                     <li className='relative flex items-center gap-2 px-2 py-1 rounded-md hover:bg-gray-100'
-                    onMouseOver={()=>handleMoveIn('product')} onMouseOut={()=>handleMouseOut()}>
+                    onMouseOver={()=>handleMoveIn('solution')} onMouseOut={()=>handleMouseOut()}>
                         Solution
                         <FaAngleDown size={10} />
                         {hoveredTab==='solution' && <NavDropDownBox hoveredTab = {hoveredTab}/>}
